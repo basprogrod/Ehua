@@ -1,4 +1,4 @@
-.navbar
+.header
   &-wrapper
     height: 100px
     display: flex
@@ -6,17 +6,16 @@
     align-items: center
   &-menu
     display: flex
+    align-items: center
     justify-content: space-between
-    width: 594px
+    min-width: 594px
     height: 48px
-  &-item
-    display: flex
-    list-style: none
-    padding: 0
-    &__list
+    &__item
       display: flex
-      align-items: center
-      margin-right: 35px
+      padding: 0
+    &__list
+      list-style: none
+      margin-right: 30px
     &__link
       font-family: Open Sans
       font-style: normal
@@ -26,21 +25,22 @@
       text-decoration: none
       color: $headlines
       cursor: pointer
-  &-button
-    border: 2px solid #1565D8
-    border-radius: 8px
-    min-width: 131px
-    height: 48px
-    color: #1565D8
-    text-align: center
-    background-color: $secondary
-    font-family: Open Sans
-    font-style: normal
-    font-weight: bold
-    font-size: 16px
-    line-height: 22px
-    text-align: center
-    cursor: pointer
+    &__button
+      border: 2px solid #1565D8
+      border-radius: 8px
+      min-width: 131px
+      height: 48px
+      color: #1565D8
+      text-align: center
+      background-color: $secondary
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      cursor: pointer
+
       
 
       
