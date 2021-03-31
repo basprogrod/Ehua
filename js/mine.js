@@ -9,8 +9,8 @@ var appendNumber = 4;
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button--next',
+        prevEl: '.swiper-button--prev',
       },
     });
     document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {

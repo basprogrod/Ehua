@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ehua</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -195,25 +196,82 @@
     <div class="container">
       <h3 class="title">портфолио</h3>
       <div class="portfolio-wrapper">
-        <h1 class="portfolio-title">Наши проекты</h1>
-        <div class="navigation-buttons">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+        <h1 class="portfolio-wrapper__title">Наши проекты</h1>
       </div>
       <!-- /.portfolio-wrapper -->
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-      </div>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/portfolio/slide-1.png" alt="" class="swiper-slide__image">
+              <div class="swiper-slide__item">
+                <span class="swiper-slide__item swiper-slide__item--text">Вебсайт, Лендинг</span>
+                <h2 class="swiper-slide__item swiper-slide__item--title">Проект Вебсайта</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/portfolio/slide-2.png" alt="" class="swiper-slide__image">
+              <div class="swiper-slide__item">
+                <span class="swiper-slide__item swiper-slide__item--text">
+                  Паенль навигации, UI/UX  Дизайн
+                </span>
+                <h2 class="swiper-slide__item swiper-slide__item--title">Проект Дизайна</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/portfolio/slide-3.png" alt="" class="swiper-slide__image">
+              <div class="swiper-slide__item">
+                <span class="swiper-slide__item swiper-slide__item--text">
+                  Приложения, Мобильные, iOS
+                </span>
+                <h2 class="swiper-slide__item swiper-slide__item--title">Проекты приложений</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/portfolio/slide-4.png" alt="" class="swiper-slide__image">
+              <div class="swiper-slide__item">
+                <span class="swiper-slide__item swiper-slide__item--text">Instagram</span>
+                <h2 class="swiper-slide__item swiper-slide__item--title">Проект Иллюстраций</h2>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="swiper-button swiper-button--prev"></button>
+          <button class="swiper-button swiper-button--next"></button>
+        </div>
       <!-- /.slider -->
     </div>
     <!-- /.container -->
   </section>
   <!-- /.portfolio -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/mine.js"></script>
 </body>
 </html>
+
+
+<!--<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <!--<div class="swiper-slide">
+      <img src="img/portfolio/slide-1.png" alt="" class="swiper-slide__image">
+      <div class="swiper-slide__item">
+        <span class="swiper-slide__item swiper-slide__item--text">Вебсайт, Лендинг</span>
+        <h2 class="swiper-slide__item swiper-slide__item--title">Проект Вебсайта</h2>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+  <div class="navigation-buttons">
+    <div class="swiper-button-prev">
+      <img src="img/portfolio/prew.svg" alt="Prev">
+    </div>
+    <div class="swiper-button-next">
+      <img src="img/portfolio/next.svg" alt="Next">
+    </div>
+  </div>
+</div> -->
