@@ -1,6 +1,6 @@
 var appendNumber = 4;
     var prependNumber = 1;
-    var swiper = new Swiper('.swiper-container', {
+    new Swiper('.swiper-container', {
       slidesPerView: 3,
       centeredSlides: true,
       spaceBetween: 30,
@@ -35,3 +35,26 @@ var appendNumber = 4;
         '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
       ]);
     });
+
+    
+
+
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      direction: getDirection(),
+      navigation: {
+        prevEl: '.reviews-slider__button--prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        }
+      }
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }

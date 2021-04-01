@@ -1,0 +1,50 @@
+.reviews
+  position: relative
+  background-color: #fff
+  &-title
+    margin: 0 0 48px 0
+  &-slider
+    display: flex
+    &__card
+      min-width: 555px
+      min-height: 267px
+      padding: 40px
+      border: 1px solid #E5EAF4
+      border-radius: 8px
+      background: #FFFFFF
+    &__user
+      display: flex
+      margin-bottom: 30px
+    &__avatar
+      width: 57px
+      height: 57px
+      margin-right: 20px
+      border-radius: 50%
+      object-fit: cover
+      overflow: hidden
+    &__item
+      display: flex
+      flex-wrap: wrap
+      &--username
+        display: inline
+        margin: 0
+        font-size: 24px
+        line-height: 32px
+      &--info
+        font-size: 16px
+        line-height: 28px
+    &__text
+      margin: 0
+      margin-top: auto
+      font-size: 14px
+      line-height: 24px
+    &__button
+      position: absolute
+      width: 56px
+      height: 56px
+      z-index: 99
+      &--prev
+        top: 50%
+        right: 0
+        background-image: url(../img/reviews/button.svg)
+
