@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header--mobile--fixed">
     <div class="container">
       <div class="header-wrapper">
         <a href="#" class="logo">
@@ -38,45 +38,40 @@
             <button class="header-menu__button">Получить</button>
           </form>
         </nav>
+        <button class="burger-button header-menu__burger-button hover">
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
       </div>
       <!-- /.header-wrapper -->
     </div>
     <!-- /.container -->
   </header>
   <!-- /.header -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="container">
-        <div class="hero-left">
-          <h1 class="title hero-left__title">
-            Номер #1,<br>
-            <span class="hero-left__title hero-left__title--region">Южная Азия</span><br>
-            Агенство цифровых продуктов
-          </h1>
-          <p class="text hero-left__text">
-            Мы даем результаты, помогающие Вам добиться экономии средств и времени без риска или накладных расходов на управление
-          </p>
-          <form action="#" class="hero-form">
-            <button class="hero-form__button">Наше портфолио</button>
-          </form>
-          <div class="arrow">
-            <img src="img/hero/arrow-bottom.svg" alt="">
-          </div>
-        </div>
-        <!-- /.hero-left -->
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.hero-content -->
-    <div class="hero-image">
-      <div class="hero-right">
-        <div class="hero-mackbook">
-          <img src="img/hero/mac-image.png" alt="macbook">
+  <main class="hero">
+    <div class="container hero-container">
+      <div class="hero-left">
+        <h1 class="title hero-left__title">
+          Номер #1,<br>
+          <span class="hero-left__title hero-left__title--region">Южная Азия</span><br>
+          Агенство цифровых продуктов
+        </h1>
+        <p class="text hero-left__text">
+          Мы даем результаты, помогающие Вам добиться экономии средств и времени без риска или накладных расходов на управление
+        </p>
+        <form action="#" class="hero-form">
+          <button class="hero-form__button">Наше портфолио</button>
+        </form>
+        <div class="arrow">
+          <img src="img/hero/arrow-bottom.svg" alt="">
         </div>
       </div>
+      <!-- /.hero-left -->
+      <img src="img/hero/mac.png" alt="" class="hero-macbook">
     </div>
-    <!-- /.hero-image -->
-  </section>
+    <!-- /.container -->
+  </main>
   <!-- /.hero -->
   <section class="parter">
     <div class="container">
@@ -189,68 +184,72 @@
   <section class="portfolio">
     <div class="container">
       <h3 class="chapter portfolio-chapter">портфолио</h3>
-        <h1 class="title portfolio-title">Наши проекты</h1>
-      <!-- /.portfolio-wrapper -->
-        <div class="swiper-container swiper-container--static">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="swiper-slide__card">
-                <img src="img/portfolio/slide-1.png" alt="" class="swiper-slide__image">
-              <div class="swiper-slide__item">
-                <span class="swiper-slide__item swiper-slide__item--text">Вебсайт, Лендинг</span>
-                <h2 class="swiper-slide__item swiper-slide__item--title">Проект Вебсайта</h2>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__card">
-                <img src="img/portfolio/slide-2.png" alt="" class="swiper-slide__image">
-              <div class="swiper-slide__item">
-                <span class="swiper-slide__item swiper-slide__item--text">
-                  Паенль навигации, UI/UX  Дизайн
-                </span>
-                <h2 class="swiper-slide__item swiper-slide__item--title">Проект Дизайна</h2>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__card">
-                <img src="img/portfolio/slide-3.png" alt="" class="swiper-slide__image">
-              <div class="swiper-slide__item">
-                <span class="swiper-slide__item swiper-slide__item--text">
-                  Приложения, Мобильные, iOS
-                </span>
-                <h2 class="swiper-slide__item swiper-slide__item--title">Проекты приложений</h2>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__card">
-                <img src="img/portfolio/slide-4.png" alt="" class="swiper-slide__image">
-                <div class="swiper-slide__item">
-                  <span class="swiper-slide__item swiper-slide__item--text">Instagram</span>
-                  <h2 class="swiper-slide__item swiper-slide__item--title">Проект Иллюстраций</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="wrap">
+        <h1 class="title wrap-title">Наши проекты</h1>
+        <div class="wrap-tab">
           <!-- If we need navigation buttons -->
-          <button class="swiper-button swiper-button--prev"></button>
-          <button class="swiper-button swiper-button--next"></button>
+          <button class="wrap-tab__arrow swiper-button swiper-button--prev"></button>
+          <button class="wrap-tab__arrow swiper-button swiper-button--next"></button>
         </div>
-      <!-- /.slider -->
+      </div>
+      <!-- /.portfolio-wrapper -->
     </div>
     <!-- /.container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img src="img/portfolio/slide-1.png" alt="" class="swiper-slide__image">
+          <div class="swiper-slide__item">
+            <span class="swiper-slide__item swiper-slide__item--text">Вебсайт, Лендинг</span>
+            <h2 class="swiper-slide__item swiper-slide__item--title">Проект Вебсайта</h2>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img src="img/portfolio/slide-2.png" alt="" class="swiper-slide__image">
+          <div class="swiper-slide__item">
+            <span class="swiper-slide__item swiper-slide__item--text">
+              Паенль навигации, UI/UX  Дизайн
+            </span>
+            <h2 class="swiper-slide__item swiper-slide__item--title">Проект Дизайна</h2>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img src="img/portfolio/slide-3.png" alt="" class="swiper-slide__image">
+          <div class="swiper-slide__item">
+            <span class="swiper-slide__item swiper-slide__item--text">
+              Приложения, Мобильные, iOS
+            </span>
+            <h2 class="swiper-slide__item swiper-slide__item--title">Проекты приложений</h2>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img src="img/portfolio/slide-4.png" alt="" class="swiper-slide__image">
+            <div class="swiper-slide__item">
+              <span class="swiper-slide__item swiper-slide__item--text">Instagram</span>
+              <h2 class="swiper-slide__item swiper-slide__item--title">Проект Иллюстраций</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- /.slider -->
   </section>
   <!-- /.portfolio -->
   <section class="reviews">
-    <div class="container">
+    <div class="container reviews__container">
       <h3 class="chapter reviews-chapter">Отзывы</h3>
       <h1 class="title reviews-title">Что говорят о нас</h1>
         <!-- Slider main container -->
-        <div class="swiper-container reviews-slider">
+        <div class="swiper-container-2 reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide reviews-slider__card">
               <div class="reviews-slider__user">
@@ -280,7 +279,20 @@
                 </p>
               </div>
             </div>
-
+            <div class="swiper-slide reviews-slider__card">
+              <div class="reviews-slider__user">
+                <img src="img/reviews/reviews-avatar-2.png" alt="Icon: " class="reviews-slider__avatar">
+                <div class="reviews-slider__item">
+                  <h3 class="title reviews-slider__item reviews-slider__item--username">Valdemar Forsberg</h3>
+                  <span class="text reviews-slider__item reviews-slider__item--info">Основатель Digitac Finance</span>
+                </div>
+              </div>
+              <div class="reviews-slider__coment">
+                <p class="text reviews-slider__text">
+                  Ehya подтолкнул нас к мысли, выходящей за рамки наших первоначальных возможностей и воображения, при этом гарантируя, что дизайн и форма платформы постоянно корректируются на основе данных.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="reviews-slider__button reviews-slider__button--prev"></div>
         </div>
