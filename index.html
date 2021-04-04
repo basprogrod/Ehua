@@ -17,28 +17,28 @@
         <a href="#" class="logo">
           <img src="img/Logo.svg" alt="Logo" class="logo__image">
         </a>
-        <nav class="header-menu">
-          <ul class="header-menu__item">
-            <li class="header-menu__list">
+        <nav id="nav" class="header-menu nav">
+          <ul class="header-menu__item nav__list">
+            <li class="header-menu__list nav__item">
               <a href="#" class="header-menu__link">Домой</a>
             </li>
-            <li class="header-menu__list">
+            <li class="header-menu__list nav__item">
               <a href="#" class="header-menu__link">Лэндинги</a>
               <img src="img/header-down.svg" alt="">
             </li>
-            <li class="header-menu__list">
+            <li class="header-menu__list nav__item">
               <a href="#" class="header-menu__link">Страницы</a>
               <img src="img/header-down.svg" alt="">
             </li>
-            <li class="header-menu__list">
+            <li class="header-menu__list nav__item">
               <a href="#" class="header-menu__link">Помощь</a>
             </li>
           </ul>
-          <form action="#">
-            <button class="header-menu__button">Получить</button>
-          </form>
+            
+          <button id="get" type="button" class="header-menu__button">Получить</button>
+          
         </nav>
-        <button class="burger-button header-menu__burger-button">
+        <button id="burger-button" class="burger-button">
           <span class="burger-button__line"></span>
           <span class="burger-button__line"></span>
           <span class="burger-button__line"></span>
@@ -60,15 +60,15 @@
         <p class="text hero-left__text">
           Мы даем результаты, помогающие Вам добиться экономии средств и времени без риска или накладных расходов на управление
         </p>
-        <form action="#" class="hero-form">
-          <button class="hero-form__button">Наше портфолио</button>
-        </form>
-        <div class="arrow">
-          <img src="img/hero/arrow-bottom.svg" alt="">
-        </div>
       </div>
       <!-- /.hero-left -->
+      <form action="#" class="hero-form">
+        <button class="hero-form__button">Наше портфолио</button>
+      </form>
       <img src="img/hero/mac.png" alt="" class="hero-macbook">
+      <div class="arrow">
+        <img src="img/hero/arrow-bottom.svg" alt="">
+      </div>
     </div>
     <!-- /.container -->
   </main>
@@ -85,19 +85,19 @@
         </div>
         <!-- /.info -->
         <div class="brands">
-          <a href="https://slack.com/intl/en-by/" class="brands-link" target="_blank">
+          <a href="https://slack.com/intl/en-by/" class="brands-link order-one" target="_blank">
             <img src="img/parter/slack.svg" alt="Logo: Slack" class="brands-link__logo">
           </a>
-          <a href="https://www.netflix.com" class="brands-link" target="_blank">
+          <a href="https://www.netflix.com" class="brands-link order-two" target="_blank">
             <img src="img/parter/netflix.svg" alt="Logo: Netflix" class="brands-link__logo">
           </a>
-          <a href="https://www.fitbit.com/global/eu/home" class="brands-link" target="_blank">
+          <a href="https://www.fitbit.com/global/eu/home" class="brands-link order-three" target="_blank">
             <img src="img/parter/fitbit.svg" alt="Logo: Fitbit" class="brands-link__logo">
           </a>
-          <a href="https://store.google.com/regionpicker" class="brands-link" target="_blank">
+          <a href="https://store.google.com/regionpicker" class="brands-link order-four" target="_blank">
             <img src="img/parter/google.svg" alt="Logo: Google" class="brands-link__logo">
           </a>
-          <a href="https://www.airbnb.ru/" class="brands-link" target="_blank">
+          <a href="https://www.airbnb.ru/" class="brands-link order-five" target="_blank">
             <img src="img/parter/airbnb.svg" alt="Logo: Airbpn" class="brands-link__logo">
           </a>
         </div>
@@ -110,7 +110,7 @@
   <section class="action">
     <div class="container">
       <div class="action-top">
-        <h1 class="title action-top__title">Что мы делаем</h1>
+        <h2 class="title action-top__title">Что мы делаем</h2>
         <span class="text action-top__text">
           Мы работаем вместе с нашим клиентом, чтобы создать эффективный
           продукт.
@@ -185,7 +185,7 @@
     <div class="container">
       <h3 class="chapter portfolio-chapter">портфолио</h3>
       <div class="wrap">
-        <h1 class="title wrap-title">Наши проекты</h1>
+        <h2 class="title wrap-title">Наши проекты</h2>
         <div class="wrap-tab">
           <!-- If we need navigation buttons -->
           <button class="wrap-tab__arrow swiper-button swiper-button--prev"></button>
@@ -247,7 +247,7 @@
   <section class="reviews">
     <div class="container reviews__container">
       <h3 class="chapter reviews-chapter">Отзывы</h3>
-      <h1 class="title reviews-title">Что говорят о нас</h1>
+      <h2 class="title reviews-title">Что говорят о нас</h2>
         <!-- Slider main container -->
         <div class="swiper-container-2 reviews-slider">
           <div class="swiper-wrapper">
@@ -304,7 +304,7 @@
   <section class="social">
     <div class="container">
       <h3 class="chapter social-chapter">Наши соцсети</h3>
-      <h1 class="title social-title">Будем друзьями</h1>
+      <h2 class="title social-title">Будем друзьями</h2>
       <div class="social-wrapper">
         <div class="subscribe">
           <a href="https://www.instagram.com/" class="subscribe-soc" target="_blank">
@@ -379,12 +379,12 @@
   <section class="newsletter">
     <div class="container">
       <div class="newsletter-wrapper">
-        <h1 class="newsletter-wrapper__title">Мы готовы к сложным проектам</h1>
-        <span class="newsletter-wrapper__text">
+        <h2 class="newsletter-title">Мы готовы к сложным проектам</h2>
+        <span class="newsletter-text">
           Отправьте нам свой бриф и расскажите о своем проекте. Мы готовы помочь всем, что вам нужно
         </span>
-        <form action="" class="newsletter-wrapper__form">
-          <button class="newsletter-wrapper__form newsletter-wrapper__form--button">Пообщаемся?</button>
+        <form action="#" class="newsletter-form">
+          <button class="newsletter-form__button">Пообщаемся?</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->

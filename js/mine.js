@@ -1,34 +1,61 @@
-var appendNumber = 4;
-var prependNumber = 1;
+document.addEventListener('DOMContentLoaded', () => {
 
-new Swiper('.swiper-container', {
-  slidesPerView: 3,
-  centeredSlides: true,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.swiper-button--prev',
-    prevEl: '.swiper-button--next',
-  },
-  slideChange: (e) => {
-    console.log('KEk');
-  },
-})
+  const bb = document.getElementById('burger-button')
+  const getBtn = document.getElementById('get')
+  // const modal = document.getElementById('modal')
+  const nav = document.getElementById('nav')
 
-const sl = new Swiper('.swiper-container-2', {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.reviews-slider__button--prev',
-  },
-  slideChange: (e) => {
-    console.log('KEk');
+  bb.addEventListener('click', function (e) {
+    nav.classList.toggle('active')       
+  })
+
+  getBtn.addEventListener('click', function (e) {
+    modal.classList.add('active')       
+  })
+
+  nav.onclick = (e) => {
+    e.stopPropagation()
   }
-});
 
-const button = document.querySelector('')
+  // modal.onclick = (e) => {
+  //   e.stopPropagation()
+  // }
 
-// button.addEventListener('click', () => {
-//   sl.slideNext()
-// })
+  document.onscroll = () => {
+    nav.classList.remove('active')
+  }
+
+  document.body.onclick = function(e) {
+    if (e.target !== bb) {
+      nav.classList.remove('active')
+      modal.classList.remove('active')
+    }
+    
+  }
+
+  new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button--prev',
+      prevEl: '.swiper-button--next',
+    },
+    slideChange: (e) => {
+      console.log('KEk');
+    },
+  })
+
+  const sl = new Swiper('.swiper-container-2', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.reviews-slider__button--prev',
+    },
+    slideChange: (e) => {
+      console.log('KEk');
+    }
+  });
+})
 
 // slick slider

@@ -1,13 +1,66 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .parter
+    &-info
+      &__present
+        flex-basis: 45.5%
 @media (max-width: 992px)
   .container
     max-width: 700px
+  .parter
+    &-info
+      &__present
+        font-size: 25px
+      &__text
+        font-size: 12px
+  .brands
+    padding: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
+  .parter
+    &-wrapper
+      padding: 64px 0 64px 0
+    &-info
+      margin-bottom: 35px
+      &__present
+        flex-basis: 100%
+        font-size: 23px
+      &__text
+        flex-basis: 100%
+  .brands
+    &-link 
+      &__logo
+        width: 80px
+@media (max-width: 576px)
+  .container
+    max-width: 540px
+  .parter
+    &-chapter
+      text-align: center
+    &-info
+      display: flex
+      justify-content: center
+      &__present
+        font-size: 28px
+        line-height: 29px
+        text-align: center
+        flex-basis: 60%
+      &__text
+        text-align: center
+        flex-basis: 60%
+        font-size: 13px
+        line-height: 24px
+  .brands
+    width: 185px
+    height: 100px
+    flex-wrap: wrap
+    margin: auto
+  .order
+    &-five
+      display: none
 @media (max-width: 320px)
   .container
     max-width: 280px

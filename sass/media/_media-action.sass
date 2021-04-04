@@ -1,14 +1,27 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .action
+    &-top
+      padding: 0
+      &__text 
+        font-size: 16px
+    &-bottom 
+      justify-content: space-evenly
+    &-card 
+      margin-bottom: 20px
 @media (max-width: 992px)
   .container
     max-width: 700px
 @media (max-width: 767px)
   .container
-    max-width: 576px
-    width: 92%
+      max-width: 576px
+      width: 100%
+  .action
+    &-card 
+      margin-bottom: 20px
+      width: 100%
+      max-width: none 
 @media (max-width: 320px)
   .container
     max-width: 280px
-    width: 90%
