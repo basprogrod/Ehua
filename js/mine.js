@@ -37,13 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 30,
+
     navigation: {
       nextEl: '.swiper-button--prev',
       prevEl: '.swiper-button--next',
     },
-    slideChange: (e) => {
-      console.log('KEk');
-    },
+
   })
 
   const sl = new Swiper('.swiper-container-2', {
@@ -52,10 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: '.reviews-slider__button--prev',
     },
-    slideChange: (e) => {
-      console.log('KEk');
-    }
   });
 })
-
-// slick slider

@@ -13,15 +13,46 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
+  .action-top
+    &__title
+      font-size: 25px
+    &__text
+      font-size: 14px
+  .action-card
+    max-width: 320px
 @media (max-width: 767px)
   .container
       max-width: 576px
       width: 100%
   .action
+    &-top
+      display: flex
+      flex-wrap: wrap
+      &__title
+        max-width: none
+        text-align: center
+      &__text
+        margin: auto
+        text-align: center
     &-card 
       margin-bottom: 20px
       width: 100%
       max-width: none 
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+  .action-card
+    min-height: 197px
+    &__title
+      margin: 0
+    &__content
+      margin-left: 0px
+    &__logo
+      position: relative
+      margin-bottom: 17px
+@media (max-width: 576px)
+  .container
+    max-width: 540px
 @media (max-width: 320px)
   .container
     max-width: 280px
