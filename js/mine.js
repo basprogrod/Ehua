@@ -36,7 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.swiper-container', {
     slidesPerView: 3,
     centeredSlides: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
+    // cssMode: true,
+    grabCursor: true,
+    loop: true,
+    roundLengths: true,
 
     navigation: {
       nextEl: '.swiper-button--prev',
@@ -48,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const sl = new Swiper('.swiper-container-2', {
     slidesPerView: 2,
     spaceBetween: 30,
+    loop: true,
+
     navigation: {
       nextEl: '.reviews-slider__button--prev',
     },
