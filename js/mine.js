@@ -57,5 +57,28 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: '.reviews-slider__button--prev',
     },
+
+    breakpoints: {
+      // when window width is >= 320px
+      1440: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      767: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
+
   });
 })
